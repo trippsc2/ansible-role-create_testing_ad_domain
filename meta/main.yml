@@ -1,0 +1,20 @@
+---
+galaxy_info:
+  author: Jim Tarpley
+  namespace: trippsc2
+  role_name: create_testing_ad_domain
+  description: This role creates an Active Directory domain on the Windows machine for use during Molecule testing.
+  license: MIT
+
+  min_ansible_version: '2.11'
+
+  platforms:
+  - name: Windows
+    versions:
+      - '2019'
+      - '2022'
+
+collections:
+  - microsoft.ad
+
+dependencies: []
