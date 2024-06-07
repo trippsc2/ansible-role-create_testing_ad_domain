@@ -15,7 +15,7 @@ argument_specs:
         default: 
           - '8.8.8.8'
           - '1.1.1.1'
-      dc_domain_name:
+      domain_name:
         description:
           - The name of the domain to create.
         type: str
@@ -39,3 +39,9 @@ argument_specs:
           - If not provided, the domain admin user must already exist.
         type: str
         required: false
+      domain_base_dn:
+        description:
+          - The base DN for the domain.
+        type: str
+        required: false
+        default: DC=test,DC=loc
